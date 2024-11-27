@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemaBiblioteca
 {
-    public class User
+    public abstract class User
     {
         public string Usuario { get; set; }
         public string CPF { get; protected set; }
@@ -17,5 +17,9 @@ namespace SistemaBiblioteca
             Usuario = nome;
             CPF = cpf;
         }
+        public abstract string ToString();
+        
+      
+        
     }
 }
